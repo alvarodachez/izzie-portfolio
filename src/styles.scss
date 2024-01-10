@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "ArchivoMedium";
+  src: url("./assets/fonts/archivo-medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PerpetuaLight";
+  src: url("./assets/fonts/perpetua-light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ArchivoBold";
+  src: url("./assets/fonts/archivo-bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ArchivoBoldItalic";
+  src: url("./assets/fonts/archivo-bold-italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}

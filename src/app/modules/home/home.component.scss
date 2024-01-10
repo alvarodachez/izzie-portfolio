@@ -1,0 +1,44 @@
+.menu-item {
+  transition: background-color 0.3s, color 0.3s;
+  margin: 0 0.5rem;
+  padding: 0.2rem 1rem; /* Ajusta el padding según necesites */
+  border-radius: 9999px; /* Esto proporciona la curvatura elíptica */
+}
+
+.menu-item:hover {
+  background-color: black; /* Fondo negro en hover */
+  color: white; /* Texto blanco en hover */
+}
+
+.carousel-wrapper {
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.horizontal-line {
+  content: "";
+  width: 100%;
+  position: absolute;
+  height: 2px;
+}
+
+.text-carousel {
+  position: relative;
+  white-space: nowrap;
+}
+
+/* Si quieres usar animaciones CSS en lugar de la etiqueta <marquee> */
+.carousel-text-animated {
+  display: inline-block;
+  animation: slide-right 90s linear infinite;
+}
+
+@keyframes slide-right {
+  0% {
+    transform: translate3d(0%, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}

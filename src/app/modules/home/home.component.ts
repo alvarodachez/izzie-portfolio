@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
+  items = ['DISEÑADORA GRÁFICA', 'DISEÑADORA GRÁFICA', 'DISEÑADORA GRÁFICA']; // Repetir el texto para que el carrusel parezca infinito
   constructor() {}
 
   ngOnInit() {}
