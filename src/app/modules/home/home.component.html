@@ -1,5 +1,6 @@
 <!-- app-header.component.html -->
 <header
+  id="inicio"
   class="flex flex-col sm:flex-row justify-between items-center py-12 px-12 bg-white"
 >
   <div class="logo-container">
@@ -9,12 +10,12 @@
   <!-- <div class="font-handwriting text-6xl mb-4 sm:mb-0 px-8">Isabel Paguillo</div> -->
   <nav class="flex flex-col text-right space-y-4 sm:space-y-0 px-8">
     <a
-      href="/inicio"
+      href="#inicio"
       class="menu-item font-ArchivoBoldItalic text-sm hover:text-gray-700"
       >INICIO</a
     >
     <a
-      href="/sobre-mi"
+      href="#sobreMi"
       class="menu-item font-ArchivoBoldItalic text-sm hover:text-gray-700"
       >SOBRE MÍ</a
     >
@@ -24,7 +25,7 @@
       >PORFOLIO</a
     >
     <a
-      href="/contacto"
+      href="#contacto"
       class="menu-item font-ArchivoBoldItalic text-sm hover:text-gray-700"
       >CONTACTO</a
     >
@@ -32,7 +33,7 @@
 </header>
 
 <!-- text-carousel.component.html -->
-<div class="carousel-wrapper relative my-8">
+<div class="carousel-wrapper relative mt-8 mb-16">
   <div class="horizontal-line bg-black absolute left-0 right-0 top-0"></div>
   <div class="text-carousel">
     <div class="carousel-text-animated py-7">
@@ -63,15 +64,145 @@
       <span class="text-3xl font-PerpetuaLight mx-24">DISEÑADORA GRÁFICA</span>
     </div>
   </div>
-  <!-- <marquee class="text-carousel flex items-center justify-center py-7">
-    <span class="text-3xl font-PerpetuaLight mx-24">DISEÑADORA GRÁFICA</span>
-    <span class="text-3xl font-PerpetuaLight mx-24">DISEÑADORA GRÁFICA</span>
-    <span class="text-3xl font-PerpetuaLight mx-24">DISEÑADORA GRÁFICA</span>
-    <span class="text-3xl font-PerpetuaLight mx-24">DISEÑADORA GRÁFICA</span>
-    <span class="text-3xl font-PerpetuaLight mx-24">DISEÑADORA GRÁFICA</span>
-    <span class="text-3xl font-PerpetuaLight mx-24">DISEÑADORA GRÁFICA</span>
-    <span class="text-3xl font-PerpetuaLight mx-24">DISEÑADORA GRÁFICA</span>
-    <span class="text-3xl font-PerpetuaLight mx-24">DISEÑADORA GRÁFICA</span>
-  </marquee> -->
   <div class="horizontal-line bg-black absolute left-0 right-0 bottom-0"></div>
 </div>
+
+<div class="container mx-auto text-center relative h-96 py-12 px-4">
+  <div
+    class="hover-effect absolute font-ArchivoBold text-lg"
+    style="left: 10%; top: 12rem"
+  >
+    Atrae más clientes
+  </div>
+  <div
+    class="hover-effect absolute font-ArchivoBold text-lg"
+    style="left: 25%; top: 1.5rem"
+  >
+    Transforma tu negocio
+  </div>
+  <div
+    class="hover-effect absolute font-ArchivoBold text-lg"
+    style="right: 35%; top: 4rem"
+  >
+    Destaca entre la competencia
+  </div>
+  <div
+    class="hover-effect absolute font-ArchivoBold text-lg"
+    style="right: 18%; top: 12rem"
+  >
+    Aumenta tus ventas
+  </div>
+</div>
+
+<div
+  id="sobreMi"
+  class="container mx-auto flex justify-center items-center p-5"
+>
+  <div class="flex flex-col md:flex-row items-stretch">
+    <img
+      src="assets/img/profile_izzie.jpg"
+      alt="Isabel Paguillo"
+      class="md:w-1/2 h-96 object-cover"
+    />
+    <div class="md:w-1/2 w-full px-5">
+      <div class="bg-white border-8 border-black h-96 px-5">
+        <h1 class="text-3xl mb-3">Hola,</h1>
+        <p>
+          mi nombre es <span class="font-bold">Isabel Paguillo</span> y en 2015
+          empecé a adentrarme en el mundo del arte digital. Me gradué
+          posteriormente en los Estudios Superiores de Diseño Gráfico en Sevilla
+          (España), y actualmente ejerzo como diseñadora freelancer focalizada
+          en las nuevas tendencias artísticas, destacándome en
+          <span class="font-bold">Ilustración, Fotomontaje y Branding</span>.
+        </p>
+        <p class="my-3">
+          Me encuentro enérgica para defender cualquier encargo que conlleve
+          realizar un proyecto, con ganas de potenciar y ampliar mis capacidades
+          y abordar nuevos desafíos.
+        </p>
+        <div class="flex space-x-4 mt-5">
+          <a
+            href="path-to-curriculum"
+            class="bg-transparent border border-black text-black py-2 px-4 rounded"
+            >Currículum</a
+          >
+          <a
+            href="path-to-contact"
+            class="bg-black text-white py-2 px-4 rounded"
+            >Contacto</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="contacto" class="container mx-auto p-6 mb-10 text-center">
+  <h2 class="text-4xl font-PerpetuaLight mb-6">HAGAMOS ALGO QUE A LA</h2>
+  <h2 class="text-4xl font-PerpetuaLight mb-6">GENTE LE ENCANTE MIRAR</h2>
+  <p class="text-lg font-ArchivoBoldItalic mb-8">¡No dudes en contactarme!</p>
+  <p class="mb-4">Cuéntame tu proyecto y responderé en breve personalmente:</p>
+
+  <form class="space-y-4 mx-auto" style="max-width: 600px">
+    <div>
+      <input
+        type="text"
+        name="nombre"
+        placeholder="NOMBRE"
+        class="border-b-2 border-black bg-transparent w-full text-center py-2 focus:outline-none"
+      />
+    </div>
+    <div>
+      <input
+        type="email"
+        name="email"
+        placeholder="EMAIL"
+        class="border-b-2 border-black bg-transparent w-full text-center py-2 focus:outline-none"
+      />
+    </div>
+    <div>
+      <input
+        type="text"
+        name="asunto"
+        placeholder="ASUNTO"
+        class="border-b-2 border-black bg-transparent w-full text-center py-2 focus:outline-none"
+      />
+    </div>
+    <div>
+      <textarea
+        name="mensaje"
+        rows="4"
+        placeholder="MENSAJE"
+        class="border-b-2 border-black bg-transparent w-full text-center py-2 focus:outline-none"
+      ></textarea>
+    </div>
+    <div>
+      <button
+        type="submit"
+        class="border-2 border-black bg-black text-white px-6 py-2 rounded-full hover:bg-transparent hover:text-black transition-colors"
+      >
+        ENVIAR
+      </button>
+    </div>
+  </form>
+</div>
+
+<footer class="container mx-auto px-14 py-4">
+  <div class="h-px bg-gray-500 w-full mb-6"></div>
+  <div class="flex items-center justify-between">
+    <div class="flex flex-col">
+      <span class="font-ArchivoMedium">Isabel Paguillo</span>
+      <span class="font-PerpetuaLight">SUPR.MARKTHLNC@GMAIL.COM</span>
+      <span class="font-ArchivoBold">617171774</span>
+      <span class="font-ArchivoMedium">41310, Sevilla</span>
+    </div>
+
+    <div class="flex flex-col items-end">
+      <span class="font-ArchivoMedium">Preferencias de Cookies.</span>
+      <span class="font-ArchivoMedium"
+        >© 2015-2023 <span class="font-ArchivoBold">Isabel Paguillo</span>.
+        Reservados todos los derechos.</span
+      >
+    </div>
+  </div>
+</footer>
