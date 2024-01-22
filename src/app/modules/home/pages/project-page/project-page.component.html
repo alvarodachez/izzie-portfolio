@@ -1,0 +1,27 @@
+<div class="relative min-h-screen bg-white flex flex-col">
+  <div class="px-16 pt-16 mx-72">
+    <h1 class="text-5xl font-PerpetuaBold text-left mb-2">
+      {{ projectData?.name }}
+    </h1>
+    <p class="text-left font-PerpetuaLight mb-8">{{ categoriesString }}</p>
+    <p class="text-left font-ArchivoMedium mt-4 mb-8">
+      {{ projectData?.description }}
+    </p>
+  </div>
+
+  <div class="flex justify-center my-8">
+    <img
+      [src]="projectData?.img"
+      alt="Fondo Negro"
+      class="h-full w-2/5 object-cover mx-auto"
+    />
+  </div>
+
+  <a
+    (click)="goToHome()"
+    style="cursor: pointer"
+    class="fixed bottom-0 right-0 p-16 text-black transition-colors font-PerpetuaLight text-sm"
+  >
+    &lt; Volver al portfolio
+  </a>
+</div>

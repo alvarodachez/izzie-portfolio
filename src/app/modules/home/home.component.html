@@ -20,7 +20,7 @@
       >SOBRE MÍ</a
     >
     <a
-      href="/portafolio"
+      href="#portafolio"
       class="menu-item font-ArchivoBoldItalic text-sm hover:text-gray-700"
       >PORFOLIO</a
     >
@@ -96,16 +96,19 @@
 
 <div
   id="sobreMi"
-  class="container mx-auto flex justify-center items-center p-5"
+  class="container mx-auto flex justify-center items-center p-5 mb-16"
 >
-  <div class="flex flex-col md:flex-row items-stretch">
+  <div class="flex flex-col md:flex-row items-stretch p-16">
     <img
       src="assets/img/profile_izzie.jpg"
       alt="Isabel Paguillo"
       class="md:w-1/2 h-96 object-cover"
     />
     <div class="md:w-1/2 w-full px-5">
-      <div class="bg-white border-8 border-black h-96 px-5">
+      <div
+        class="bg-white border-black h-96 px-5 py-5"
+        style="border-width: 13px"
+      >
         <h1 class="text-3xl mb-3">Hola,</h1>
         <p>
           mi nombre es <span class="font-bold">Isabel Paguillo</span> y en 2015
@@ -137,17 +140,22 @@
   </div>
 </div>
 
-<div id="contacto" class="container mx-auto p-6 mb-10 text-center">
-  <h2 class="text-4xl font-PerpetuaLight mb-6">HAGAMOS ALGO QUE A LA</h2>
-  <h2 class="text-4xl font-PerpetuaLight mb-6">GENTE LE ENCANTE MIRAR</h2>
-  <p class="text-lg font-ArchivoBoldItalic mb-8">¡No dudes en contactarme!</p>
-  <p class="mb-4">Cuéntame tu proyecto y responderé en breve personalmente:</p>
+<app-portfolio id="portafolio"></app-portfolio>
+
+<div id="contacto" class="container mx-auto p-6 mb-10 text-center mt-16">
+  <h2 class="text-6xl font-PerpetuaLight mb-2">HAGAMOS ALGO QUE A LA</h2>
+  <h2 class="text-6xl font-PerpetuaLight mb-12">GENTE LE ENCANTE MIRAR</h2>
+  <p class="text-2xl font-ArchivoBoldItalic">¡No dudes en contactarme!</p>
+  <p class="text-xl mb-14">
+    Cuéntame tu proyecto y responderé en breve personalmente:
+  </p>
 
   <form class="space-y-4 mx-auto" style="max-width: 600px">
     <div>
       <input
         type="text"
         name="nombre"
+        autocomplete="off"
         placeholder="NOMBRE"
         class="border-b-2 border-black bg-transparent w-full text-center py-2 focus:outline-none"
       />
@@ -155,6 +163,7 @@
     <div>
       <input
         type="email"
+        autocomplete="off"
         name="email"
         placeholder="EMAIL"
         class="border-b-2 border-black bg-transparent w-full text-center py-2 focus:outline-none"
@@ -164,6 +173,7 @@
       <input
         type="text"
         name="asunto"
+        autocomplete="off"
         placeholder="ASUNTO"
         class="border-b-2 border-black bg-transparent w-full text-center py-2 focus:outline-none"
       />
@@ -171,18 +181,22 @@
     <div>
       <textarea
         name="mensaje"
+        autocomplete="off"
         rows="4"
         placeholder="MENSAJE"
         class="border-b-2 border-black bg-transparent w-full text-center py-2 focus:outline-none"
       ></textarea>
     </div>
     <div>
-      <button
+      <p class="text-4xl mt-5 font-PerpetuaBold mb-8" style="cursor: pointer">
+        ENVIAR
+      </p>
+      <!-- <button
         type="submit"
         class="border-2 border-black bg-black text-white px-6 py-2 rounded-full hover:bg-transparent hover:text-black transition-colors"
       >
         ENVIAR
-      </button>
+      </button> -->
     </div>
   </form>
 </div>

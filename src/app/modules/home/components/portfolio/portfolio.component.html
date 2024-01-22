@@ -1,0 +1,41 @@
+<div class="p-16">
+  <div class="p-16 border-black border-2 rounded-2xl">
+    <div class="text-center mb-6">
+      <h2 class="text-6xl font-PerpetuaBold mb-16">PORFOLIO</h2>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7">
+      <div
+        *ngFor="let project of projects"
+        class="portfolio-item relative cursor-crosshair shadow-md"
+        (click)="goToProjectView(project.name)"
+      >
+        <img
+          src="{{ project.img }}"
+          alt="{{ project.name }}"
+          class="w-full h-full object-cover"
+        />
+        <div
+          class="overlay absolute inset-0 bg-black opacity-0 transition-opacity duration-500 ease-in-out flex items-center justify-center"
+        >
+          <div class="text-center">
+            <p class="text-white mb-8 text-sm">{{ project.name }}</p>
+            <!--  <h2 class="text-white text-3xl font-bold">
+              {{
+                project.categories.length >= 2
+                  ? project.categories[0] + " · " + project.categories[1]
+                  : project.categories[0]
+              }}
+            </h2> -->
+            <p class="text-white text-sm">
+              {{
+                project.categories.length >= 2
+                  ? project.categories[0] + " · " + project.categories[1]
+                  : project.categories[0]
+              }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

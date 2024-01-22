@@ -1,0 +1,26 @@
+.portfolio-item {
+  position: relative;
+  width: 100%; /* or your desired width */
+  height: 100%; /* or your desired height */
+  overflow: hidden;
+}
+
+.portfolio-item:hover .overlay {
+  opacity: 1; /* Reveal the overlay */
+}
+
+.overlay::before {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: white;
+}
+
+.cursor-crosshair {
+  cursor: crosshair;
+}
+
+/* Añade esta clase a tu archivo CSS global o en un archivo CSS específico para este componente */
