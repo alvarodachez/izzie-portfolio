@@ -5,9 +5,10 @@ import { PROJECTS } from 'src/app/mocks/projects-mock';
 import { SharedDataService } from 'src/app/core/services/shared-data.service';
 
 @Component({
-  selector: 'app-portfolio',
-  templateUrl: './portfolio.component.html',
-  styleUrls: ['./portfolio.component.scss'],
+    selector: 'app-portfolio',
+    templateUrl: './portfolio.component.html',
+    styleUrls: ['./portfolio.component.scss'],
+    standalone: false
 })
 export class PortfolioComponent implements OnInit {
   projects: Project[] = [];

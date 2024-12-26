@@ -5,9 +5,10 @@ import { Project } from '../../models/home.interface';
 import { PROJECTS } from 'src/app/mocks/projects-mock';
 
 @Component({
-  selector: 'app-project-page',
-  templateUrl: './project-page.component.html',
-  styleUrls: ['./project-page.component.scss'],
+    selector: 'app-project-page',
+    templateUrl: './project-page.component.html',
+    styleUrls: ['./project-page.component.scss'],
+    standalone: false
 })
 export class ProjectPageComponent implements OnInit {
   projectData: Project | undefined;
