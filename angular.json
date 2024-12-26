@@ -69,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "izzie-portfolio:build:production"
+              "buildTarget": "izzie-portfolio:build:production"
             },
             "development": {
-              "browserTarget": "izzie-portfolio:build:development"
+              "buildTarget": "izzie-portfolio:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -80,7 +80,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "izzie-portfolio:build"
+            "buildTarget": "izzie-portfolio:build"
           }
         },
         "test": {
